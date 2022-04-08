@@ -13,10 +13,6 @@ class StagePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.grey.shade800,
       appBar: AppBar(
-        titleTextStyle: TextStyle(
-          fontFamily: 'RubicWatPaint-Regular',
-          fontSize: 20,
-        ),
         backgroundColor: Colors.black,
         title: Text('What Metal Band Are You?'),
       ),
