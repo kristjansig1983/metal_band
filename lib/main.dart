@@ -29,11 +29,11 @@ class Stage extends StatefulWidget {
 class _StageState extends State<Stage> {
   void changeAnswer() {
     setState(() {
-      ballNumber = Random().nextInt(5) + 1;
+      stageNumber = Random().nextInt(5) + 1;
     });
   }
 
-  int ballNumber = 0;
+  int stageNumber = 0;
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -44,7 +44,7 @@ class _StageState extends State<Stage> {
         onPressed: () {
           changeAnswer();
         },
-        child: Image.asset('images/stage$ballNumber.png'),
+        child: Image.asset('images/stage$stageNumber.png'),
       ),
     );
   }
